@@ -8,8 +8,7 @@ steps:
   commands:
   - npm install
   - npm test
-
-trigger:
-  event:
-  - push
+  when:
+    event:
+    - push
 ...
