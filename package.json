@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test:unit",
+    "test:unit": "mocha test/unit/*.spec.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliktb/nodejs-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliktb/nodejs-example/issues"
+  },
+  "homepage": "https://github.com/aliktb/nodejs-example#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0"
+  }
+}
