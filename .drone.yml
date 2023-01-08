@@ -1,10 +1,9 @@
 kind: pipeline
-type: docker
 name: build and test
 
 steps:
 - name: test
-  image: node
+  image: node:16.14.2
   commands:
   - npm install
   - npm test
