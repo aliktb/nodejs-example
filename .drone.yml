@@ -1,13 +1,19 @@
+---
 kind: pipeline
-name: build and test
+name: testing
+
+platform:
+  os: linux
+  arch: amd64
 
 steps:
+- name: install
+  image: node:16.14.2
+  commands:
+  - npm ci
+
+
 - name: test
   image: node:16.14.2
   commands:
-  - npm install
-  - npm test
-  when:
-    event:
-    - push
-...
+  - npm run test
